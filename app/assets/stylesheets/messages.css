@@ -7,13 +7,34 @@
   width: 300px;
   background-color: #253141;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 } 
+
+.user_name {
+  color: #FAFAFA;
+  font-size: 16px;
+}
+
+.create_chat {
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  padding: 14px;
+}
 
 .side_bar {
   height: calc(100vh - 100px);
   width: 300px;
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow-y: scroll;
+}
+
+.chat_rooms {
+  color: #FFFFFF;
+  padding: 20px 0 40px 0;
 }
 
 .main_up {
