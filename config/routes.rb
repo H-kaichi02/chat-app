@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root to: "messages#index"
   resources :users, only: [:edit, :update]
   
-  # 修正: devise_forの引数にモデル名（:usersなど）を指定する
   devise_for :users, modules: [:database_authenticatable, :registerable,
                                :recoverable, :rememberable, :validatable, :confirmable]
+
+  resources :rooms
 end
