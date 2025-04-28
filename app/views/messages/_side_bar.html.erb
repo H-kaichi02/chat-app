@@ -1,9 +1,15 @@
 <div class="side">
 <div class="side_up">
   <div class="user_name"><a><%= link_to current_user.name, edit_user_path(current_user) %></a></div>
-  <div class="create_chat"><a>チャットを作成する</a></div>
+  <div class="create_chat"><a><%= link_to "チャットを作成する", new_room_path %></a></div>
 </div>
 <div class="side_bar">
-  <div class="chat_rooms">textroom</div>
+  <% current_user.rooms.each do |room| %>
+  <div class="chat_rooms">
+    <div class="room-name">
+      <a href="#"><%= room.name %></a>
+      </div>
+  </div>
+  <% end %>
 </div>
 </div>
