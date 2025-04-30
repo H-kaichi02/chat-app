@@ -4,11 +4,7 @@
     <div class="chat_end">チャットを終了する</div>
   </div>
   <div class="main_middle">
-    <div class="user_time">
-    <div class="chat_user">Tom</div>
-    <div class="chat_time">2020/3/31(wed) 12:43:30</div>
-    </div>
-    <div class="chat_content">おはよう</div>
+  <%= render partial: 'message', collection: @messages %>
   </div>
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
   <div class="form-input">
