@@ -3,7 +3,9 @@
     <div class="chat_room_name">
       <%= @room.name %>
     </div>
-    <div class="chat_end">チャットを終了する</div>
+    <div class="chat_end">
+      <%= link_to "チャットを終了する", room_path(@room), data: {turbo_method: :delete} %>
+    </div>
   </div>
   <div class="main_middle">
   <%= render partial: 'message', collection: @messages %>
