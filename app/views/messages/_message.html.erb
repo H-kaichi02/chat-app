@@ -1,7 +1,7 @@
 <div class="main_middle">
   <div class="upper-message">
     <div class="chat_user">
-      <%= message.user.name%>
+      <%= message.user.name %>
 
     </div>
     <div class="chat_time">
@@ -14,5 +14,6 @@
       <%= message.content%>
 
     </div>
+    <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
   </div>
 </div>

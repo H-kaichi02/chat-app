@@ -73,11 +73,24 @@
 }
 
 .main_middle {
-  height: calc(100vh - 190px);
-  width: calc(100vw - 300px);
   background-color: #FAFAFA;
-  padding: 46px 40px 0 40px;
-  overflow-y: scroll;
+  padding: 46px 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_contents {
+  max-height: calc(100vh - 240px);
+  color: #434a54;
+  font-size: 14px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 10px 0 0 0;
 }
 
 .user_time {
