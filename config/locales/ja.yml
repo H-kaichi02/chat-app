@@ -1,0 +1,7 @@
+ja:
+  time:
+    formats:
+      default: "%Y年%m月%d日 %H:%M"
+  datetime:
+    formats:
+      default: "%Y年%m月%d日 %H:%M"
